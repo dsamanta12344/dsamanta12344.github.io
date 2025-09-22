@@ -4,14 +4,91 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITIS 3135 Home</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
-        header { background-color: #4CAF50; color: white; padding: 1rem; text-align: center; }
-        main { padding: 2rem; text-align: center; }
-        button { padding: 0.5rem 1rem; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        footer { background-color: #333; color: white; padding: 1rem; text-align: center; }
-    </style>
+    body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #ff9ff3, #feca57, #48dbfb);
+        color: #2f3542; /* dark text for readability */
+        animation: backgroundShift 20s infinite alternate;
+    }
+
+    @keyframes backgroundShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    header {
+        background-color: #ff6b81;
+        color: #f1c40f; /* bright yellow instead of white */
+        padding: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px #57606f;
+        border-bottom: 5px dashed #1e90ff;
+        transform: rotate(-1deg);
+    }
+
+    main {
+        max-width: 800px;
+        margin: 2rem auto;
+        background: #ffeaa7;
+        padding: 2rem;
+        border-radius: 25px;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+        line-height: 1.8;
+        border: 3px dotted #ff4757;
+        transform: rotate(0.5deg);
+        color: #2d3436; /* dark grey text */
+    }
+
+    .profile {
+        display: block;
+        max-width: 180px;
+        border-radius: 50%;
+        margin: 0 auto 2rem;
+        border: 5px double #2ed573;
+        box-shadow: 0 0 15px #ff6b81, 0 0 25px #1e90ff inset;
+        transform: rotate(-5deg);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #3742fa; /* bright blue */
+        font-size: 2rem;
+        text-shadow: 1px 1px #ff4757, 2px 2px #ffa502;
+        transform: skewX(-10deg);
+    }
+
+    section {
+        margin-bottom: 2rem;
+        background: #70a1ff;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 2px dashed #ff9ff3;
+        transform: rotate(-0.5deg);
+        color: #ffeaa7; /* light yellow font for contrast */
+    }
+
+    section p, section ul {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        background-color: #2f3542;
+        color: #fffa65; /* bright yellow */
+        padding: 1rem;
+        text-align: center;
+        font-family: "Courier New", monospace;
+        border-top: 5px dotted #ff4757;
+        transform: rotate(0.5deg);
+    }
+</style>
+
 </head>
 <body>
     <header>
@@ -20,10 +97,13 @@
     <main>
         <h2>ITIS 3135 Home</h2>
         <p>This is all the content for my ITIS 3135 class</p>
-       
+
+        <!-- Button links -->
+        <a href="contract.html" class="button-link">View Course Contract</a>
+        <a href="introduction.html" class="button-link">About Me</a>
     </main>
     <footer>
-        <p>Designed by Deb Samanta. All rights reserved.</p>
+        <p>Designed by Samanta Corp. All rights reserved.</p>
     </footer>
 </body>
 </html>
