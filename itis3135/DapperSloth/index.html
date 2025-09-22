@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dapper Sloth - Home</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    }
+
+    body {
+      background-color: #ffefc3; /* pastel yellow */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Headings */
+    h1 {
+      color: #ffd93d; /* bright yellow */
+      font-size: 3rem;
+      text-shadow: 2px 2px #ff4f81, 4px 4px #ff6f91;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #4a148c; /* dark purple */
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff6f91; /* hot pink */
+      border-bottom: 5px dashed #ffb347; /* orange */
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      list-style: none;
+    }
+
+    nav a {
+      color: #4a148c; /* dark purple */
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid #4a148c;
+      border-radius: 20px;
+      background: #ffb347; /* orange */
+    }
+
+    /* Slogan */
+    header p, footer p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ff1493; /* neon pink */
+    }
+
+    /* Main */
+    main {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #ffdac1; /* peach */
+      border: 5px dotted #ff4f81; /* hot pink */
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #6a0572; /* deep violet */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff6f91; /* hot pink */
+      border-top: 5px dashed #ffb347; /* orange */
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    /* Fun emoji decoration */
+    body::before {
+      content: "🦥🛌🦥";
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 2rem;
+      animation: wiggle 3s infinite alternate;
+    }
+
+    @keyframes wiggle {
+      0% { transform: rotate(-15deg); }
+      50% { transform: rotate(10deg); }
+      100% { transform: rotate(-15deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dapper Sloth</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <p><em>Relax in style, one sloth at a time</em></p>
+  </header>
+
+  <main>
+    <h2>Welcome to Dapper Sloth!</h2>
+    <p>Step into the whimsical world of sloth-shaped hammocks. Our hammocks are designed for ultimate relaxation, playful fun, and a cozy, colorful vibe wherever you lounge!</p>
+    <p>Whether it’s for indoor lounging, outdoor naps, or gifting your favorite slow-moving friend, Dapper Sloth makes relaxation an adventure!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dapper Sloth</p>
+    <p><em>Relax in style, one sloth at a time</em></p>
+  </footer>
+</body>
+</html>
