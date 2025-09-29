@@ -1,11 +1,11 @@
-/* Global styles */
+
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #ff9ff3, #feca57, #48dbfb);
-    color: #2f3542; /* dark text */
-    background-size: 200% 200%;
+    color: #2d3436; /* dark grey for readability */
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.3); /* subtle contrast */
     animation: backgroundShift 20s infinite alternate;
 }
 
@@ -15,18 +15,15 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Header */
 header {
     background-color: #ff6b81;
-    color: #f1c40f; /* bright yellow */
+    color: #fff; /* white text for contrast */
     padding: 2rem;
     text-align: center;
     font-size: 2.5rem;
     text-shadow: 2px 2px #57606f;
-    transform: rotate(-1deg);
 }
 
-/* Main content */
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -34,49 +31,56 @@ main {
     padding: 2rem;
     border-radius: 25px;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
-    line-height: 1.8;
-    color: #2d3436; /* dark grey text */
+    line-height: 1.9;
+    color: #2d3436;
+    font-size: 1.2rem;
 }
 
-/* Profile image */
 .profile {
     display: block;
     max-width: 180px;
     border-radius: 50%;
     margin: 0 auto 2rem;
-    border: 5px double #2ed573;
     box-shadow: 0 0 15px #ff6b81, 0 0 25px #1e90ff inset;
-    transform: rotate(-5deg);
 }
 
-/* Headings */
 h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #3742fa; /* bright blue */
     font-size: 2rem;
     text-shadow: 1px 1px #ff4757, 2px 2px #ffa502;
-    transform: skewX(-10deg);
 }
 
-/* Sections */
 section {
     margin-bottom: 2rem;
     background: #70a1ff;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border-radius: 15px;
-    color: #ffeaa7; /* light yellow font */
+    color: #fff; /* white text for contrast */
 }
 
 section p, section ul {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
 }
 
-/* Footer */
 footer {
-    background-color: #ff69b4; /* pink footer */
+    background-color: #2f3542;
     color: #fffa65; /* bright yellow text */
     padding: 1rem;
     text-align: center;
     font-family: "Courier New", monospace;
+    font-size: 1.1rem;
 }
+
+footer a {
+    color: #ffd32a; /* bright golden yellow for links */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff6b81; /* pinkish hover */
+}
+
