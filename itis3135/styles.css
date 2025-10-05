@@ -1,32 +1,33 @@
-
-body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+/* Global Reset & Box Model Fix */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
     background: linear-gradient(135deg, #ff9ff3, #feca57, #48dbfb);
+    background-size: 300% 300%;
     color: #2d3436; /* dark grey for readability */
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.3); /* subtle contrast */
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
     animation: backgroundShift 20s infinite alternate;
 }
-
 @keyframes backgroundShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
 header {
     background-color: #ff6b81;
-    color: #fff; /* white text for contrast */
+    color: #fff;
     padding: 2rem;
     text-align: center;
     font-size: 2.5rem;
     text-shadow: 2px 2px #57606f;
 }
-
 main {
-    max-width: 800px;
-    margin: 2rem auto;
+    max-width: 1200px;       /* requirement: max width */
+    margin: 0 auto;          /* centers horizontally */
     background: #ffeaa7;
     padding: 2rem;
     border-radius: 25px;
@@ -34,8 +35,10 @@ main {
     line-height: 1.9;
     color: #2d3436;
     font-size: 1.2rem;
+    /* Removed width: 90% to prevent box-sizing issues with padding */
+    /* Using max-width with auto margins achieves centering without width conflicts */
+    width: calc(90% - 4rem); /* Subtracting padding to maintain intended size */
 }
-
 .profile {
     display: block;
     max-width: 180px;
@@ -43,44 +46,81 @@ main {
     margin: 0 auto 2rem;
     box-shadow: 0 0 15px #ff6b81, 0 0 25px #1e90ff inset;
 }
-
+/* ✅ Only one h2 definition */
 h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #3742fa; /* bright blue */
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 2.5vw, 2rem); /* responsive font-size */
     text-shadow: 1px 1px #ff4757, 2px 2px #ffa502;
 }
-
 section {
     margin-bottom: 2rem;
     background: #70a1ff;
     padding: 1rem 1.5rem;
     border-radius: 15px;
-    color: #fff; /* white text for contrast */
+    color: #fff;
 }
-
 section p, section ul {
     font-size: 1.15rem;
     line-height: 1.7;
 }
-
 footer {
     background-color: #2f3542;
-    color: #fffa65; /* bright yellow text */
+    color: #fffa65;
     padding: 1rem;
     text-align: center;
     font-family: "Courier New", monospace;
     font-size: 1.1rem;
 }
-
 footer a {
-    color: #ffd32a; /* bright golden yellow for links */
+    color: #ffd32a;
     text-decoration: underline;
     transition: color 0.3s;
 }
-
 footer a:hover {
-    color: #ff6b81; /* pinkish hover */
+    color: #ff6b81;
 }
-
+/* === Responsive Media Queries === */
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    main {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+        width: calc(90% - 3rem); /* Adjusted for smaller padding */
+    }
+    .profile {
+        max-width: 150px;
+    }
+}
+/* Mobile Landscape / Small Tablets */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.8rem;
+    }
+    main {
+        font-size: 1.05rem;
+    }
+    .profile {
+        max-width: 130px;
+    }
+}
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    main {
+        font-size: 1rem;
+        padding: 1rem;
+        width: calc(90% - 2rem); /* Adjusted for smaller padding */
+    }
+    .profile {
+        max-width: 100px;
+    }
+}
