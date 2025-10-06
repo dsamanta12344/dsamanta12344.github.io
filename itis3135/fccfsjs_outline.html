@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Full Stack JavaScript Outline</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Table styling (in addition to your main styles.css) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px 12px;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tfoot td {
+            text-align: center;
+            font-style: italic;
+            background-color: #ecf0f1;
+        }
+
+        /* Schedule / completion block: high-contrast, no qualified heading */
+        .schedule {
+            margin-top: 40px;
+            padding: 22px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #2f3542 0%, #374151 100%);
+            color: #f7fafc;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .schedule-title {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 1.4rem;
+            letter-spacing: 0.2px;
+        }
+
+        .schedule p, .schedule ul, .schedule li {
+            color: #e6eef6;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .schedule ul {
+            margin-left: 1.1rem;
+            padding-left: 0.6rem;
+        }
+
+        .schedule strong {
+            color: #ffffff;
+        }
+
+        @media (max-width: 520px) {
+            .schedule {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>FCC Full Stack JavaScript Outline</h2>
+        <p>This page provides an organized outline of the FreeCodeCamp Full Stack JavaScript curriculum.</p>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Steps</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Code Editor Basics</td>
+                    <td>15</td>
+                    <td>Introduces the coding environment setup and basic commands.</td>
+                </tr>
+                <tr>
+                    <td>Variables and Strings</td>
+                    <td>62</td>
+                    <td>Covers declaring variables, working with strings, and manipulating text.</td>
+                </tr>
+                <tr>
+                    <td>Arrays</td>
+                    <td>50</td>
+                    <td>Explains how to store data in arrays, use indexes, loops, and array methods.</td>
+                </tr>
+                <tr>
+                    <td>Functions</td>
+                    <td>40</td>
+                    <td>Introduces reusable code blocks with parameters and return values.</td>
+                </tr>
+                <tr>
+                    <td>Objects</td>
+                    <td>45</td>
+                    <td>Explores object creation, properties, and methods as data structures.</td>
+                </tr>
+                <tr>
+                    <td>ES6 Features</td>
+                    <td>55</td>
+                    <td>Covers modern JavaScript features like let/const, arrow functions, and template literals.</td>
+                </tr>
+                <tr>
+                    <td>Debugging</td>
+                    <td>30</td>
+                    <td>Teaches strategies to identify and fix errors in JavaScript programs.</td>
+                </tr>
+                <tr>
+                    <td>Basic Algorithms</td>
+                    <td>35</td>
+                    <td>Introduces solving problems with loops, conditionals, and simple logic.</td>
+                </tr>
+                <tr>
+                    <td>Intermediate Algorithms</td>
+                    <td>45</td>
+                    <td>Builds more advanced problem-solving skills with recursion, sorting, and searching.</td>
+                </tr>
+                <tr>
+                    <td>Object Oriented Programming</td>
+                    <td>40</td>
+                    <td>Explains classes, constructors, prototypes, and reusable object structures.</td>
+                </tr>
+                <tr>
+                    <td>Functional Programming</td>
+                    <td>50</td>
+                    <td>Introduces higher-order functions, pure functions, and immutability concepts.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">This outline summarizes the FCC Full Stack JavaScript curriculum (partial listing shown).</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Schedule Section -->
+        <section class="schedule">
+            <h3 class="schedule-title">My Completion Schedule</h3>
+            <p>
+                I, [Your Name], intend to finish the FreeCodeCamp Full Stack Developer JavaScript section 
+                over the next 6 weeks according to the following general schedule:
+            </p>
+            <ul>
+                <li><strong>Week 1:</strong> Code Editor Basics, Variables and Strings</li>
+                <li><strong>Week 2:</strong> Arrays, Functions</li>
+                <li><strong>Week 3:</strong> Objects, ES6 Features</li>
+                <li><strong>Week 4:</strong> Debugging, Basic Algorithms</li>
+                <li><strong>Week 5:</strong> Intermediate Algorithms, Object Oriented Programming</li>
+                <li><strong>Week 6:</strong> Functional Programming, Final Review</li>
+            </ul>
+            <p>
+                I acknowledge that this is a single assignment within the course and not broken out into 
+                parts like the previous certification and will take responsibility for pacing myself.
+            </p>
+            <p>— [Your Name], [Date]</p>
+        </section>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
