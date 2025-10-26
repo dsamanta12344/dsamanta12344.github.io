@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction Form - Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="scripts/introduction.js" defer></script>
+</head>
+<body>
+  <header id="header"></header>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h2>Introduction Form</h2>
+    <h3>Please submit the form below.</h3>
+    <form id="introForm">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label>First Name: <input type="text" name="firstName" value="Deb" required></label><br>
+        <label>Middle Name/Initial: <input type="text" name="middleName" placeholder="Optional"></label><br>
+        <label>Nickname/Preferred Name: <input type="text" name="nickname" placeholder="Optional"></label><br>
+        <label>Last Name: <input type="text" name="lastName" value="Samanta" required></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Acknowledgment</legend>
+        <label>Statement: <input type="text" name="acknowledgment" value="I have read and understand the rules." required></label><br>
+        <label>Date: <input type="text" name="ackDate" value="2025-10-26" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Mascot</legend>
+        <label>Adjective: <input type="text" name="mascotAdj" value="Brave" required></label><br>
+        <label>Animal: <input type="text" name="mascotAnimal" value="Panther" required></label><br>
+        <label>Divider: <input type="text" name="divider" value="♥️" required></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Picture</legend>
+        <label>Upload Image: <input type="file" name="picture" accept="image/*"></label><br>
+        <label>Caption: <input type="text" name="caption" value="This is me!" required></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <textarea name="personalStatement" required>Hi! I'm Deb, a student at UNC Charlotte exploring web development and AI.</textarea>
+      </fieldset>
+      <fieldset id="courses">
+        <legend>Courses</legend>
+        <div class="course">
+          <label>Department: <input type="text" name="dept" value="ITIS"></label>
+          <label>Number: <input type="text" name="number" value="3135"></label>
+          <label>Name: <input type="text" name="courseName" value="Web App Design"></label>
+          <label>Reason: <input type="text" name="reason" value="To learn interactive design!"></label>
+        </div>
+      </fieldset>
+      <button type="button" id="addCourseBtn">Add Course</button>
+      <fieldset>
+        <legend>Quote</legend>
+        <label>Quote: <input type="text" name="quote" value="Learning never exhausts the mind." required></label><br>
+        <label>Author: <input type="text" name="author" value="Leonardo da Vinci" required></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Extras</legend>
+        <label>Funny thing (optional): <input type="text" name="funnyThing"></label><br>
+        <label>Something to share (optional): <input type="text" name="share"></label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Links</legend>
+        <input type="url" name="link1" value="https://linkedin.com" placeholder="LinkedIn URL" required><br>
+        <input type="url" name="link2" value="https://github.com" placeholder="GitHub URL" required><br>
+        <input type="url" name="link3" placeholder="Optional link"><br>
+        <input type="url" name="link4" placeholder="Optional link"><br>
+        <input type="url" name="link5" placeholder="Optional link"><br>
+      </fieldset>
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+    <div id="introResult"></div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
