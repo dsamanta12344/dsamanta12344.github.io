@@ -1,124 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Overview</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Project Overview - Bob's Lawn Care Website</title>
 </head>
+
 <body>
 
 <header>
-    <h1>My Course Website</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="project_overview.html">Project Overview</a></li>
-        </ul>
-    </nav>
+    <div data-include="components/header.html"></div>
+    <link rel="stylesheet" href="styles.css">
 </header>
 
 <main>
-<h2>Project Overview</h2>
 
-<h3>Project Description</h3>
-<p>
-The proposed web application is a promotional and informational website created for a small business owner named Bob. 
-Bob runs a lawn care and landscaping service and wants a website that showcases his work, lists available services, helps potential customers learn more about his business, and provides a contact form for service requests. 
-This website will help improve the visibility of Bob’s business, allow customers to easily view service examples, and simplify initial communication.
-</p>
+    <h2>Project Overview</h2>
 
-<h3>Intended Users</h3>
-<ul>
-    <li>Local homeowners seeking lawn care or landscaping services</li>
-    <li>Potential new business clients</li>
-    <li>Returning customers looking for contact or service updates</li>
-</ul>
+    <!-- Project Description -->
+    <section>
+        <h3>Project Description</h3>
+        <p>
+            This web application will be designed for a small local business owner named Bob who runs a lawn care and landscaping service. 
+            The website will highlight Bob’s services, showcase past landscaping work through a photo gallery, and provide potential customers 
+            with an easy way to contact him. The purpose of this site is to increase Bob’s visibility in the community and make communication 
+            with new clients more efficient.
+        </p>
+    </section>
 
-<h3>Overview of Website Content</h3>
-<ul>
-    <li>Business services and pricing description</li>
-    <li>Photo gallery showcasing completed projects</li>
-    <li>Contact form allowing users to reach Bob</li>
-    <li>Business background and mission</li>
-</ul>
+    <!-- Intended Users -->
+    <section>
+        <h3>Intended Users</h3>
+        <ul>
+            <li>Local homeowners looking for lawn care services</li>
+            <li>New customers searching for landscaping solutions</li>
+            <li>Returning clients seeking contact or service updates</li>
+        </ul>
+    </section>
 
-<h3>Client Information</h3>
-<ul>
-    <li><strong>Client Name:</strong> Bob Smith</li>
-    <li><strong>Business:</strong> Bob's Lawn Care & Landscaping</li>
-    <li><strong>Email:</strong> bobsmallbusiness@example.com</li>
-    <li><strong>Phone:</strong> [private]</li>
-</ul>
+    <!-- Overview of Website Content -->
+    <section>
+        <h3>Overview of Website Content</h3>
+        <ul>
+            <li>Service descriptions and pricing examples</li>
+            <li>Photo gallery of landscaping projects</li>
+            <li>About page introducing Bob and his work background</li>
+            <li>Contact form for inquiries and service requests</li>
+        </ul>
+    </section>
 
-<h3>Wireframe (Home Page Layout)</h3>
-<figure>
-    <img src="images/wireframe-homepage.png" alt="Wireframe of Home Page" style="max-width:400px;">
-    <figcaption>Figure 1: Homepage Wireframe (Created in draw.io)</figcaption>
-</figure>
+    <!-- Client Information -->
+    <section>
+        <h3>Client Information</h3>
+        <ul>
+            <li><strong>Name:</strong> Bob Smith</li>
+            <li><strong>Business:</strong> Bob's Lawn Care & Landscaping</li>
+            <li><strong>Email:</strong> bobsmallbusiness@example.com</li>
+            <li><strong>Phone:</strong> [private]</li>
+        </ul>
+    </section>
 
-<h3>Site Map</h3>
-<figure>
-    <img src="images/site-map.png" alt="Site Map Diagram" style="max-width:400px;">
-    <figcaption>Figure 2: Sitemap illustrating navigation layout</figcaption>
-</figure>
+    <!-- Wireframe -->
+    <section>
+        <h3>Wireframe (Home Page Layout)</h3>
+        <figure>
+            <img src="images/wireframe-homepage.png" alt="Homepage Wireframe" style="max-width:400px;">
+            <figcaption>Figure 1: Homepage Wireframe created using Draw.io</figcaption>
+        </figure>
+    </section>
 
-<h3>Website Page Breakdown</h3>
+    <!-- Site Map -->
+    <section>
+        <h3>Site Map</h3>
+        <figure>
+            <img src="images/site-map.png" alt="Site Map Diagram" style="max-width:400px;">
+            <figcaption>Figure 2: Sitemap showing website structure</figcaption>
+        </figure>
+    </section>
 
-<h4>1. Home Page (index.html)</h4>
-<ul>
-    <li><strong>Purpose:</strong> Introduce the business and provide quick navigation.</li>
-    <li><strong>Users:</strong> All visitors.</li>
-    <li><strong>Content:</strong> Business name, welcome message, hero image, intro text.</li>
-    <li><strong>Interactivity:</strong> Buttons linking to Services and Gallery pages.</li>
-</ul>
+    <!-- Page Details -->
+    <section>
+        <h3>Website Page Details</h3>
 
-<h4>2. About Page (about.html)</h4>
-<ul>
-    <li><strong>Purpose:</strong> Explain Bob’s background and business mission.</li>
-    <li><strong>Users:</strong> Potential customers.</li>
-    <li><strong>Content:</strong> Text, business history, photo of Bob.</li>
-    <li><strong>Interactivity:</strong> None besides navigation.</li>
-</ul>
+        <h4>1. Home Page (index.html)</h4>
+        <ul>
+            <li>Purpose: Brief introduction of business and navigation access.</li>
+            <li>Content: Welcome message, featured image, navigation links.</li>
+            <li>Interactivity: Buttons linking to Services and Gallery pages.</li>
+        </ul>
 
-<h4>3. Services Page (services.html)</h4>
-<ul>
-    <li><strong>Purpose:</strong> List services and pricing estimates.</li>
-    <li><strong>Users:</strong> Prospective customers evaluating service options.</li>
-    <li><strong>Content:</strong> Service descriptions and pricing categories.</li>
-    <li><strong>Interactivity:</strong> Accordion or tabs (jQuery UI) to show/hide details.</li>
-</ul>
+        <h4>2. About Page (about.html)</h4>
+        <ul>
+            <li>Purpose: Share information about Bob and his business background.</li>
+            <li>Content: Bio text, mission statement, photo.</li>
+        </ul>
 
-<h4>4. Gallery Page (gallery.html)</h4>
-<ul>
-    <li><strong>Purpose:</strong> Display before/after images of completed projects.</li>
-    <li><strong>Users:</strong> Customers comparing quality.</li>
-    <li><strong>Interactivity:</strong> JavaScript image slideshow or lightbox gallery.</li>
-</ul>
+        <h4>3. Services Page (services.html)</h4>
+        <ul>
+            <li>Purpose: Display list of services and estimated pricing.</li>
+            <li>Interactivity: jQuery UI accordion to expand/hide details.</li>
+        </ul>
 
-<h4>5. Contact Page (contact.html)</h4>
-<ul>
-    <li><strong>Purpose:</strong> Allow users to send service inquiries.</li>
-    <li><strong>Users:</strong> Anyone wanting to contact Bob.</li>
-    <li><strong>Content:</strong> Name, phone/email, message form fields.</li>
-    <li><strong>Validation:</strong> Required fields using JavaScript form validation.</li>
-</ul>
+        <h4>4. Gallery Page (gallery.html)</h4>
+        <ul>
+            <li>Purpose: Show completed landscaping projects.</li>
+            <li>Interactivity: JavaScript slideshow/lightbox image view.</li>
+        </ul>
 
-<h3>Dynamic Functionality</h3>
-<ul>
-    <li><strong>Gallery Page:</strong> JavaScript slideshow/lightbox for images.</li>
-    <li><strong>Services Page:</strong> jQuery UI Accordion to expand service descriptions.</li>
-    <li><strong>Contact Page:</strong> JavaScript form validation, optional AJAX submit simulation.</li>
-</ul>
+        <h4>5. Contact Page (contact.html)</h4>
+        <ul>
+            <li>Purpose: Allow users to send message inquiries.</li>
+            <li>Content: Form fields for name, contact info, message.</li>
+            <li>Validation: JavaScript form validation ensuring required fields.</li>
+        </ul>
+    </section>
 
-<footer>
-    <p>Created by Your Name — Date</p>
-    <a href="https://validator.w3.org/">HTML Validator</a> |
-    <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
-</footer>
+    <!-- Dynamic Functionality -->
+    <section>
+        <h3>Dynamic Functionality</h3>
+        <ul>
+            <li><strong>Gallery Page:</strong> JavaScript slideshow to cycle through project images.</li>
+            <li><strong>Services Page:</strong> jQuery UI Accordion to organize service descriptions.</li>
+            <li><strong>Contact Page:</strong> JavaScript form validation for user input accuracy.</li>
+        </ul>
+    </section>
 
 </main>
+
+<footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+
+<script src="scripts/HTMLInclude.min.js"></script>
 
 </body>
 </html>
