@@ -2,52 +2,81 @@
 <html lang="en">
 <head>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Contract</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Evaluations</title>
 </head>
+
 <header>
-        <div data-include="components/header.html"></div>
+  <div data-include="components/header.html"></div>
+  <link rel="stylesheet" href="styles.css">
+</header>
 
-    <link rel="stylesheet" href="styles.css">
+<main>
+  <h2>Website Evaluations</h2>
 
-    </header>
+  <!-- BAD WEBSITE -->
+  <section>
+    <h3><a href="https://www.goodreads.com" target="_blank">Goodreads (Bad)</a></h3>
+    <p>
+      Goodreads is a social cataloging site where readers can track, review, and share books. 
+      It allows users to build virtual bookshelves, connect with other readers, and explore 
+      community features, though its design has often been critiqued as outdated and cluttered.
+    </p>
+    <ul>
+      <li>
+        <strong>Contrast:</strong> Book covers and headings stand out, but the site overall has low 
+        visual hierarchy, and too much text competes for attention.
+      </li>
+      <li>
+        <strong>Repetition:</strong> Some elements like book listings are consistent, but many parts 
+        of the interface feel outdated and inconsistent.
+      </li>
+      <li>
+        <strong>Alignment:</strong> While most content is grid-aligned, sidebars and content blocks 
+        often feel crowded or misaligned.
+      </li>
+      <li>
+        <strong>Proximity:</strong> Related book information is grouped, but many pages crowd 
+        unrelated items together, leading to visual clutter.
+      </li>
+    </ul>
+  </section>
 
-  <main>
-    <h2>Website Evaluations</h2>
+  <!-- GOOD WEBSITE -->
+  <section>
+    <h3><a href="https://www.amazon.com" target="_blank">Amazon (Good)</a></h3>
+    <p>
+      Amazon is a widely used e-commerce platform known for its extensive catalog of products, 
+      personalized recommendations, and efficient shopping experience. Its layout is designed to 
+      guide users quickly toward purchases and product comparisons.
+    </p>
+    <ul>
+      <li>
+        <strong>Contrast:</strong> Amazon uses strong color contrast (such as yellow buttons against white or dark 
+        backgrounds) to draw attention to key actions like “Add to Cart.”
+      </li>
+      <li>
+        <strong>Repetition:</strong> Typography, buttons, product cards, and navigation structure remain consistent 
+        throughout the site, helping users recognize patterns and navigate efficiently.
+      </li>
+      <li>
+        <strong>Alignment:</strong> Product listings, search results, and menus are cleanly aligned in grid layouts, 
+        making the site easy to scan and visually structured.
+      </li>
+      <li>
+        <strong>Proximity:</strong> Product images, titles, prices, and ratings are grouped tightly, which helps the 
+        user compare items quickly without confusion.
+      </li>
+    </ul>
+  </section>
 
-    <section>
-      <h3><a href="https://www.goodreads.com" target="_blank">Goodreads</a></h3>
-      <p>
-        Goodreads is a social cataloging site where readers can track, review, and share books. 
-        It allows users to build virtual bookshelves, connect with other readers, and explore 
-        community features, though its design has often been critiqued as outdated and cluttered.
-      </p>
-      <ul>
-        <li>
-          <strong>Contrast:</strong> Book covers and headings stand out, but the site overall has low 
-          visual hierarchy, too much text competes for attention.
-        </li>
-        <li>
-          <strong>Repetition:</strong> Core elements like book listings and shelves are consistently styled, 
-          but some sections feel inconsistent and dated, reducing unity.
-        </li>
-        <li>
-          <strong>Alignment:</strong> Many elements are arranged in grids or columns, but some pages feel cramped 
-          and misaligned, especially with sidebars and crowded content blocks.
-        </li>
-        <li>
-          <strong>Proximity:</strong> Book title, author, and rating are grouped well, but on busier pages 
-          related and unrelated items are often crammed together, creating clutter.
-        </li>
-      </ul>
-    </section>
+</main>
 
-  </main>
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
 
-  <footer>
-         <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLInclude.min.js"></script>
+<script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
