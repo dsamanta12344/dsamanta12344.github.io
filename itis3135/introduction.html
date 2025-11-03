@@ -4,79 +4,135 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Deb Samanta</title>
-    
-
-
+    <title>Project Overview - Bob's Lawn Care Website</title>
 </head>
+
 <body>
-   
-    <header>
-        <div data-include="components/header.html"></div>
 
+<header>
+    <div data-include="components/header.html"></div>
     <link rel="stylesheet" href="styles.css">
+</header>
 
-    </header>
-    <main>
-        <!-- Profile Image -->
-        <img src="pic.PNG" alt="Profile picture of Deb Samanta" class="profile">
+<main>
 
-        <!-- Personal Background -->
-        <section>
-            <h2>Personal Background</h2>
-            <p>I am Deb Samanta, and I enjoy learning new technologies, coding, and working on creative projects.</p>
-        </section>
+    <h2>Project Overview</h2>
 
-        <!-- Professional Background -->
-        <section>
-            <h2>Professional Background</h2>
-            <p>I have some experience with programming and web development through school projects and self teaching./</p>
-        </section>
+    <!-- Project Description -->
+    <section>
+        <h3>Project Description</h3>
+        <p>
+            This web application will be designed for a small local business owner named Bob who runs a lawn care and landscaping service. 
+            The website will highlight Bob’s services, showcase past landscaping work through a photo gallery, and provide potential customers 
+            with an easy way to contact him. The purpose of this site is to increase Bob’s visibility in the community and make communication 
+            with new clients more efficient.
+        </p>
+    </section>
 
-        <!-- Academic Background -->
-        <section>
-            <h2>Academic Background</h2>
-            <p>I am currently pursuing a degree in Computer Science with a focus on information technology.</p>
-        </section>
+    <!-- Intended Users -->
+    <section>
+        <h3>Intended Users</h3>
+        <ul>
+            <li>Local homeowners looking for lawn care services</li>
+            <li>New customers searching for landscaping solutions</li>
+            <li>Returning clients seeking contact or service updates</li>
+        </ul>
+    </section>
 
-        <!-- Background in the Course -->
-        <section>
-            <h2>Background in This Course</h2>
-            <p>I have basic experience with python and java.</p>
-        </section>
+    <!-- Overview of Website Content -->
+    <section>
+        <h3>Overview of Website Content</h3>
+        <ul>
+            <li>Service descriptions and pricing examples</li>
+            <li>Photo gallery of landscaping projects</li>
+            <li>About page introducing Bob and his work background</li>
+            <li>Contact form for inquiries and service requests</li>
+        </ul>
+    </section>
 
-        <!-- Primary Computer Platform -->
-        <section>
-            <h2>Primary Computer Platform</h2>
-            <p>Windows 11 on a laptop is my primary platform, I am using a hp elitebook.</p>
-        </section>
+    <!-- Client Information -->
+    <section>
+        <h3>Client Information</h3>
+        <ul>
+            <li><strong>Name:</strong> Bob Smith</li>
+            <li><strong>Business:</strong> Bob's Lawn Care & Landscaping</li>
+            <li><strong>Email:</strong> bobsmallbusiness@example.com</li>
+            <li><strong>Phone:</strong> [private]</li>
+        </ul>
+    </section>
 
-        <!-- Courses Taking -->
-        <section>
-            <h2>Courses I'm Taking</h2>
-            <ul>
-                <li>ITIS 3135 – Web-Based Application Design and Development</li>
-                <li>ITSC 3155 – Software Engineering</li>
-                <li>ITIS 3200 – Intro to Information Security</li>
-                <li>STAT 2122 – Probability and Statistics</li>
-            </ul>
-        </section>
+    <!-- Wireframe -->
+    <section>
+        <h3>Wireframe (Home Page Layout)</h3>
+        <figure>
+            <img src="images/wireframe-homepage.png" alt="Homepage Wireframe" style="max-width:400px;">
+            <figcaption>Figure 1: Homepage Wireframe created using Draw.io</figcaption>
+        </figure>
+    </section>
 
-        <!-- Funny/Interesting Story -->
-        <section>
-            <h2>Funny or Interesting Story</h2>
-            <p>One time I forgot my wallet at the DMV.</p>
-        </section>
+    <!-- Site Map -->
+    <section>
+        <h3>Site Map</h3>
+        <figure>
+            <img src="images/site-map.png" alt="Site Map Diagram" style="max-width:400px;">
+            <figcaption>Figure 2: Sitemap showing website structure</figcaption>
+        </figure>
+    </section>
 
-        <!-- Something Else to Share -->
-        <section>
-            <h2>Something Else to Share</h2>
-            <p>Outside of tech I enjoy videogames and TV.</p>
-        </section>
-    </main>
-    <footer>
-         <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLInclude.min.js"></script>
+    <!-- Page Details -->
+    <section>
+        <h3>Website Page Details</h3>
+
+        <h4>1. Home Page (index.html)</h4>
+        <ul>
+            <li>Purpose: Brief introduction of business and navigation access.</li>
+            <li>Content: Welcome message, featured image, navigation links.</li>
+            <li>Interactivity: Buttons linking to Services and Gallery pages.</li>
+        </ul>
+
+        <h4>2. About Page (about.html)</h4>
+        <ul>
+            <li>Purpose: Share information about Bob and his business background.</li>
+            <li>Content: Bio text, mission statement, photo.</li>
+        </ul>
+
+        <h4>3. Services Page (services.html)</h4>
+        <ul>
+            <li>Purpose: Display list of services and estimated pricing.</li>
+            <li>Interactivity: jQuery UI accordion to expand/hide details.</li>
+        </ul>
+
+        <h4>4. Gallery Page (gallery.html)</h4>
+        <ul>
+            <li>Purpose: Show completed landscaping projects.</li>
+            <li>Interactivity: JavaScript slideshow/lightbox image view.</li>
+        </ul>
+
+        <h4>5. Contact Page (contact.html)</h4>
+        <ul>
+            <li>Purpose: Allow users to send message inquiries.</li>
+            <li>Content: Form fields for name, contact info, message.</li>
+            <li>Validation: JavaScript form validation ensuring required fields.</li>
+        </ul>
+    </section>
+
+    <!-- Dynamic Functionality -->
+    <section>
+        <h3>Dynamic Functionality</h3>
+        <ul>
+            <li><strong>Gallery Page:</strong> JavaScript slideshow to cycle through project images.</li>
+            <li><strong>Services Page:</strong> jQuery UI Accordion to organize service descriptions.</li>
+            <li><strong>Contact Page:</strong> JavaScript form validation for user input accuracy.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+
+<script src="scripts/HTMLInclude.min.js"></script>
+
 </body>
 </html>

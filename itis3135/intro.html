@@ -7,8 +7,22 @@
   <title>Introduction Form - Your Name</title>
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Existing form script -->
   <script src="scripts/introduction.js" defer></script>
+
+  <!-- Generate HTML script -->
+  <script src="scripts/generate_html.js" defer></script>
+
+  <!-- ⭐ NEW Generate JSON script -->
+  <script src="scripts/generate_json.js" defer></script>
+
+  <!-- Highlight.js for code formatting -->
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
+
 <body>
   <header id="header"></header>
   <div data-include="components/header.html"></div>
@@ -16,6 +30,7 @@
   <main>
     <h2>Introduction Form</h2>
     <h3>Please submit the form below.</h3>
+
     <form id="introForm">
       <fieldset>
         <legend>Basic Information</legend>
@@ -24,26 +39,31 @@
         <label>Nickname/Preferred Name: <input type="text" name="nickname" placeholder="Optional"></label><br>
         <label>Last Name: <input type="text" name="lastName" value="Samanta" required></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Acknowledgment</legend>
         <label>Statement: <input type="text" name="acknowledgment" value="I have read and understand the rules." required></label><br>
-        <label>Date: <input type="text" name="ackDate" value="2025-10-26" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required></label><br>
+        <label>Date: <input type="text" name="ackDate" value="2025-10-26" pattern="\d{4}-\d{2}-\d{2}" required></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Mascot</legend>
         <label>Adjective: <input type="text" name="mascotAdj" value="Brave" required></label><br>
         <label>Animal: <input type="text" name="mascotAnimal" value="Panther" required></label><br>
         <label>Divider: <input type="text" name="divider" value="♥️" required></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Picture</legend>
         <label>Upload Image: <input type="file" name="picture" accept="image/*"></label><br>
         <label>Caption: <input type="text" name="caption" value="This is me!" required></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Personal Info</legend>
         <textarea name="personalStatement" required>Hi! I'm Deb, a student at UNC Charlotte exploring web development and AI.</textarea>
       </fieldset>
+
       <fieldset id="courses">
         <legend>Courses</legend>
         <div class="course">
@@ -54,36 +74,45 @@
         </div>
       </fieldset>
       <button type="button" id="addCourseBtn">Add Course</button>
+
       <fieldset>
         <legend>Quote</legend>
         <label>Quote: <input type="text" name="quote" value="Learning never exhausts the mind." required></label><br>
         <label>Author: <input type="text" name="author" value="Leonardo da Vinci" required></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Extras</legend>
         <label>Funny thing (optional): <input type="text" name="funnyThing"></label><br>
         <label>Something to share (optional): <input type="text" name="share"></label><br>
       </fieldset>
+
       <fieldset>
         <legend>Links</legend>
-        <input type="url" name="link1" value="https://linkedin.com" placeholder="LinkedIn URL" required><br>
-        <input type="url" name="link2" value="https://github.com" placeholder="GitHub URL" required><br>
+        <input type="url" name="link1" value="https://linkedin.com" required><br>
+        <input type="url" name="link2" value="https://github.com" required><br>
         <input type="url" name="link3" placeholder="Optional link"><br>
         <input type="url" name="link4" placeholder="Optional link"><br>
         <input type="url" name="link5" placeholder="Optional link"><br>
       </fieldset>
+
+      <!-- ⭐ BUTTON GROUP WITH BOTH NEW BUTTONS -->
       <div class="buttons">
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
         <button type="button" id="clearBtn">Clear</button>
+        <button type="button" id="generateHTMLBtn">Generate HTML</button>
+        <button type="button" id="generateJSONBtn">Generate JSON</button>
       </div>
     </form>
+
     <div id="introResult"></div>
   </main>
 
   <footer>
     <div data-include="components/footer.html"></div>
   </footer>
+
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
