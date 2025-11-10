@@ -1,0 +1,85 @@
+/* Earth & Natural Theme (Green Version) */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e1f0d1; /* soft green */
+    color: #2c3e20; /* dark green for text */
+}
+
+header {
+    background-color: #4a7a35; /* deeper natural green */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Fix overqualified selector: just use .active instead of a.active */
+.active,
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('placeholder-hero.jpg'); /* Replace later */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    background-color: #6ba145; /* green instead of tan */
+}
+
+/* Fix qualified heading: remove element qualification */
+.hero-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a7a35;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #3e672e;
+}
+
+/* Fix adjoining classes: create separate classes instead */
+.btn-secondary {
+    background-color: #7ca55b;
+}
+
+.btn-secondary:hover {
+    background-color: #678c48;
+}
+
+/* Content Sections */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #cfe6b4; /* lighter green background for contrast */
+}

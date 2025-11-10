@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Validator Script -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Bob's Lawn Care & Landscaping</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <div data-include="header.html"></div>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div id="accordion">
+                <h3>Lawn Mowing</h3>
+                <div><p>Regular mowing to keep your lawn healthy. Starting at $30 per visit.</p></div>
+
+                <h3>Landscaping</h3>
+                <div><p>Custom landscaping projects, including planting, stonework, and design. Pricing varies.</p></div>
+
+                <h3>Seasonal Cleanup</h3>
+                <div><p>Leaf removal, debris cleanup, and garden preparation. $50 per session.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- footer can be added later -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="HTMLInclude.min.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({ collapsible: true, active: false });
+        });
+    </script>
+</body>
+</html>
