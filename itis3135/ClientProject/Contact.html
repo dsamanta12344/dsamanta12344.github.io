@@ -15,11 +15,57 @@
 
     <main>
         <section class="contact">
-            <h2>Contact Information</h2>
+            <h2 class="contact-title">Contact Information</h2>
             <p>Email: bobsmallbusiness@example.com</p>
             <p>Phone: (555) 123-4567</p>
             <p>Address: 123 Greenway Lane, Hometown, USA</p>
             <p>Feel free to call or email us to schedule your lawn care or landscaping service.</p>
+        </section>
+
+        <section class="contact-form-section">
+            <h2 class="form-title">Send Us a Message</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service...</option>
+                        <option value="lawn-mowing">Lawn Mowing</option>
+                        <option value="landscaping">Landscaping</option>
+                        <option value="tree-trimming">Tree Trimming</option>
+                        <option value="fertilization">Fertilization</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="successMessage" class="success-message">
+                Thank you for your message! We'll get back to you soon.
+            </div>
         </section>
     </main>
 
@@ -28,5 +74,6 @@
     </footer>
 
     <script src="HTMLInclude.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

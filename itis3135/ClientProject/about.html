@@ -3,27 +3,75 @@
 <head>
     <!-- Validator Script -->
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Bob's Lawn Care & Landscaping</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div data-include="header.html"></div>
     </header>
 
     <main>
+
+        <!-- About Section -->
         <section class="about">
             <h2>About Bob</h2>
-            <p>Bob Smith has been providing expert lawn care and landscaping services to the local community for over 10 years. His mission is to create beautiful, healthy outdoor spaces for all clients.</p>
+            <p>
+                Bob Smith has been providing expert lawn care and landscaping services to the local
+                community for over 10 years. His mission is to create beautiful, healthy outdoor spaces
+                for all clients.
+            </p>
         </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">What services does Bob provide?</button>
+                <div class="accordion-content">
+                    <p>
+                        Bob offers lawn mowing, mulching, leaf removal, hedge trimming, and full
+                        landscape design services tailored to each client's needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">How long has Bob been in business?</button>
+                <div class="accordion-content">
+                    <p>
+                        Bob has served the local community for over a decade, delivering reliable and
+                        high-quality lawn care services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">Does Bob offer free estimates?</button>
+                <div class="accordion-content">
+                    <p>
+                        Yes! Bob provides free on-site consultations and detailed quotes for all lawn care
+                        and landscaping projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <!-- footer can be added later -->
+        <!-- Footer is dynamically loaded later if needed -->
     </footer>
 
+    <!-- JS Scripts -->
     <script src="HTMLInclude.min.js"></script>
+    <script src="accordion.js"></script>
+
 </body>
 </html>
