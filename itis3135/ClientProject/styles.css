@@ -279,3 +279,7 @@ nav a:hover {
         padding: 12px 24px;
     }
 }
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
